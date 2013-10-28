@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:usb
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,32 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:microsd
-LIBS:conn_16
-LIBS:conn_15
-LIBS:conn_18
-LIBS:mcp73831
-LIBS:SparkFun
-LIBS:tac_switchsmd_evqp2
-LIBS:cn3063
-LIBS:mic5205
-LIBS:NUC120_QFN48
-LIBS:mcp1702
-LIBS:multireg
-LIBS:inductor_select
-LIBS:logo
-LIBS:MK20LF
-LIBS:mounthole
-LIBS:vssa
-LIBS:vdda
-LIBS:mchck-cache
-EELAYER 24 0
+LIBS:breakout-cache
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title "MC HCK microcontroller board"
-Date "29 Aug 2013"
+Date "28 oct 2013"
 Rev "R5-rc3"
 Comp "(c) 2011,2012,2013 Simon Schubert"
 Comment1 "CERN OHL v.1.1 or later"

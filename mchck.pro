@@ -1,4 +1,4 @@
-update=Thu 29 Aug 2013 02:51:47 PM CEST
+update=Sun 27 Oct 2013 04:49:37 PM CET
 version=1
 last_client=eeschema
 [general]
@@ -32,7 +32,7 @@ LibDir=
 LibName1=mchck
 [eeschema]
 version=1
-LibDir=.
+LibDir=.;/blue-zfs/dangerous-prototypes-open-hardware/Kicad_Part_Library
 NetFmtName=PcbnewAdvanced
 RptD_X=0
 RptD_Y=100

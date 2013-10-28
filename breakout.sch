@@ -1,0 +1,312 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:breakout-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MC HCK microcontroller board"
+Date "28 oct 2013"
+Rev "R5-rc3"
+Comp "(c) 2011,2012,2013 Simon Schubert"
+Comment1 "CERN OHL v.1.1 or later"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_4 P2
+U 1 1 4F3D2CED
+P 5050 3850
+F 0 "P2" V 5000 3850 50  0000 C CNN
+F 1 "DEBUG" V 5100 3850 50  0000 C CNN
+F 2 "SparkFun-1X04_LOCK" V 5050 3850 60  0001 C CNN
+F 3 "" H 5050 3850 60  0001 C CNN
+F 4 "never" V 5050 3850 60  0001 C CNN "populate"
+	1    5050 3850
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_14 P4
+U 1 1 4E446864
+P 4550 4150
+F 0 "P4" V 4500 4150 60  0000 C CNN
+F 1 "LOWER_PINS" V 4600 4150 60  0000 C CNN
+F 2 "SparkFun-1X14_LOCK" V 4550 4150 60  0001 C CNN
+F 3 "" H 4550 4150 60  0001 C CNN
+F 4 "never" V 4550 4150 60  0001 C CNN "populate"
+	1    4550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LOGO G1
+U 1 1 503C1464
+P 10300 800
+F 0 "G1" H 10300 800 60  0000 C CNN
+F 1 "OHW LOGO" H 10300 550 60  0000 C CNN
+F 2 "OHW-LOGO-6mm" H 10300 650 60  0001 C CNN
+F 3 "" H 10300 800 60  0001 C CNN
+F 4 "never" H 10300 800 60  0001 C CNN "populate"
+	1    10300 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR01
+U 1 1 5047C978
+P 5100 4750
+F 0 "#PWR01" H 5100 4750 30  0001 C CNN
+F 1 "VSS" H 5100 4680 30  0000 C CNN
+F 2 "" H 5100 4750 60  0001 C CNN
+F 3 "" H 5100 4750 60  0001 C CNN
+	1    5100 4750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5000 5500 5000 4500
+Wire Wire Line
+	4800 5500 4800 4500
+Wire Wire Line
+	4600 5500 4600 4500
+Wire Wire Line
+	4400 5500 4400 4500
+Wire Wire Line
+	4200 4500 4200 5500
+Wire Wire Line
+	4300 4500 4300 5500
+Wire Wire Line
+	4500 4500 4500 5500
+Wire Wire Line
+	4700 4500 4700 5500
+Wire Wire Line
+	4900 4500 4900 5500
+Wire Wire Line
+	4100 5500 4100 4500
+Wire Wire Line
+	5100 4500 5100 4750
+Wire Wire Line
+	3900 5500 3900 4500
+Wire Wire Line
+	4000 4500 4000 5500
+$Comp
+L VSS #PWR02
+U 1 1 521F4D20
+P 5200 3350
+F 0 "#PWR02" H 5200 3350 30  0001 C CNN
+F 1 "VSS" H 5200 3280 30  0000 C CNN
+F 2 "" H 5200 3350 60  0000 C CNN
+F 3 "" H 5200 3350 60  0000 C CNN
+	1    5200 3350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5100 3350 5200 3350
+$Comp
+L CONN_5X2 BP1
+U 1 1 526ED381
+P 6250 3950
+F 0 "BP1" H 6250 4250 60  0000 C CNN
+F 1 "SWD_BP" V 6250 3950 50  0000 C CNN
+F 2 "~" H 6250 3950 60  0000 C CNN
+F 3 "~" H 6250 3950 60  0000 C CNN
+	1    6250 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 4500 5200 4500
+Text Label 6050 4500 1    60   ~ 0
+GND
+$Comp
+L CONN_5X2 BP2
+U 1 1 526EDF53
+P 7250 3950
+F 0 "BP2" H 7250 4250 60  0000 C CNN
+F 1 "ezPort_BP" V 7250 3950 50  0000 C CNN
+F 2 "~" H 7250 3950 60  0000 C CNN
+F 3 "~" H 7250 3950 60  0000 C CNN
+	1    7250 3950
+	0    -1   -1   0   
+$EndComp
+Text Label 6050 3550 1    60   ~ 0
+3.3V
+Text Label 6350 4500 1    60   ~ 0
+CLK
+Wire Wire Line
+	4400 4850 7450 4850
+Connection ~ 4400 4850
+Wire Wire Line
+	4300 4950 7600 4950
+Connection ~ 4300 4950
+Text Label 7450 3550 1    60   ~ 0
+MISO
+Text Label 7450 4450 1    60   ~ 0
+CS
+Wire Wire Line
+	4200 5050 7700 5050
+Wire Wire Line
+	7350 3200 7350 3550
+Connection ~ 4200 5050
+Text Label 7350 3550 1    60   ~ 0
+MOSI
+Text Label 6350 3550 1    60   ~ 0
+MOSI
+Wire Wire Line
+	7350 4350 7350 4700
+Connection ~ 5100 4600
+Wire Wire Line
+	6050 4600 6050 4350
+Wire Wire Line
+	6350 4350 6350 4700
+Text Label 7350 4500 1    60   ~ 0
+CLK
+Connection ~ 6050 4600
+Wire Wire Line
+	7050 4600 7050 4350
+Text Label 7050 4500 1    60   ~ 0
+GND
+Text Label 7050 3550 1    60   ~ 0
+3.3V
+NoConn ~ 6150 3550
+NoConn ~ 6250 3550
+NoConn ~ 6450 3550
+NoConn ~ 6450 4350
+NoConn ~ 6150 4350
+NoConn ~ 6250 4350
+NoConn ~ 7150 4350
+NoConn ~ 7250 4350
+NoConn ~ 7150 3550
+NoConn ~ 7250 3550
+Wire Wire Line
+	5850 3050 5850 4500
+Wire Wire Line
+	7050 3050 7050 3550
+Wire Wire Line
+	6050 3050 6050 3550
+Wire Wire Line
+	7450 3550 7450 3300
+Wire Wire Line
+	7450 3300 7600 3300
+Wire Wire Line
+	7700 3200 7350 3200
+Text Label 4200 4650 1    60   ~ 0
+A1
+Text Label 4300 4650 1    60   ~ 0
+A2
+Text Label 4400 4650 1    60   ~ 0
+A4
+Text Label 4900 3500 1    60   ~ 0
+SWD CK
+Text Label 5000 3500 1    60   ~ 0
+SWD IO
+Wire Wire Line
+	5100 3350 5100 3500
+Wire Wire Line
+	5100 4600 7050 4600
+Connection ~ 6700 4700
+Wire Wire Line
+	6350 4700 7350 4700
+Wire Wire Line
+	6350 3550 6350 3250
+Wire Wire Line
+	6350 3250 5000 3250
+Wire Wire Line
+	5000 3250 5000 3500
+Wire Wire Line
+	4900 1650 4900 3500
+Wire Wire Line
+	4900 3150 6700 3150
+Wire Wire Line
+	6700 1650 6700 4700
+Wire Wire Line
+	5850 3050 7050 3050
+Connection ~ 6050 3050
+Wire Wire Line
+	7450 4850 7450 4350
+Wire Wire Line
+	7600 3300 7600 4950
+Wire Wire Line
+	7700 5050 7700 3200
+$Comp
+L CONN_4 P2
+U 1 1 526EF5CE
+P 6250 2350
+F 0 "P2" V 6200 2350 50  0000 C CNN
+F 1 "DEBUG" V 6300 2350 50  0000 C CNN
+F 2 "SparkFun-1X04_LOCK" V 6250 2350 60  0001 C CNN
+F 3 "" H 6250 2350 60  0001 C CNN
+F 4 "never" V 6250 2350 60  0001 C CNN "populate"
+	1    6250 2350
+	0    -1   1    0   
+$EndComp
+$Comp
+L VSS #PWR03
+U 1 1 526EF5D4
+P 6400 1850
+F 0 "#PWR03" H 6400 1850 30  0001 C CNN
+F 1 "VSS" H 6400 1780 30  0000 C CNN
+F 2 "" H 6400 1850 60  0000 C CNN
+F 3 "" H 6400 1850 60  0000 C CNN
+	1    6400 1850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6300 1850 6400 1850
+Text Label 6100 2000 1    60   ~ 0
+SWD CK
+Text Label 6200 2000 1    60   ~ 0
+SWD IO
+Wire Wire Line
+	6300 1850 6300 2000
+Wire Wire Line
+	6200 1750 6200 2000
+Wire Wire Line
+	6100 2000 6100 1650
+Wire Wire Line
+	6100 1650 4900 1650
+Wire Wire Line
+	6200 1700 6200 1650
+Wire Wire Line
+	6200 1650 6700 1650
+Connection ~ 6700 3150
+Text HLabel 6500 2600 0    60   Input ~ 0
+SWD mchck
+Wire Notes Line
+	5450 2750 6950 2750
+Wire Notes Line
+	6950 2750 6950 1450
+Wire Notes Line
+	6950 1450 5450 1450
+Wire Notes Line
+	5450 1450 5450 2750
+Wire Notes Line
+	5700 2750 5750 2750
+$EndSCHEMATC
