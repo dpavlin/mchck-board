@@ -1,9 +1,12 @@
-update=Mon 28 Oct 2013 07:48:10 PM CET
+update=Sat 02 Nov 2013 03:42:57 PM CET
 last_client=eeschema
 [eeschema]
 version=1
+PageLayoutDescrFile=
+SubpartIdSeparator=0
+SubpartFirstId=65
 LibDir=/blue-zfs/dangerous-prototypes-open-hardware/Kicad_Part_Library
-NetFmtName=
+NetFmtName=PcbnewAdvanced
 RptD_X=0
 RptD_Y=100
 RptLab=1
